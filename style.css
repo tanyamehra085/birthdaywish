@@ -273,10 +273,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 column grid */
   }
 
-  .birthday-photo {
-    height: 90px; /* chhota photo for mobile */
-    margin-top: 0;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -284,9 +281,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 column grid */
   }
 
-  .birthday-photo {
-    height: 70px;
-  }
+}
 }
 
 /* ================= SMALL MOBILE (<= 480px) ================= */
