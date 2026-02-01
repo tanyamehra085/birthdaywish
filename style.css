@@ -267,7 +267,27 @@ body {
   }
 
 }
+/* Mobile 3x3 grid */
+@media (max-width: 768px) {
+  .photo-wrapper {
+    grid-template-columns: repeat(3, 1fr); /* 3 column grid */
+  }
 
+  .birthday-photo {
+    height: 90px; /* chhota photo for mobile */
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-wrapper {
+    grid-template-columns: repeat(3, 1fr); /* 3 column grid */
+  }
+
+  .birthday-photo {
+    height: 70px;
+  }
+}
 
 /* ================= SMALL MOBILE (<= 480px) ================= */
 @media (max-width: 480px){
