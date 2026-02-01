@@ -32,9 +32,12 @@ html {
   margin-bottom: 30px;
   width: 350px;
 }
-
+.p{
+  cursor:pointer;
+}
 #tap {
   display: inline-block;
+ 
 }
 
 .foto {
@@ -60,7 +63,7 @@ html {
 .paper {
   font-family: 'Roboto', sans-serif;
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 800px;
   min-width: 300px;
   height: 540px;
@@ -179,3 +182,124 @@ body {
   padding: 0;
   text-align: center;
 }
+
+
+.photo-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  /* margin-top:60px; */
+}
+
+.birthday-photo{
+  height:260px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  padding:6px;
+  background:white;
+  transition:all 0.3s ease;
+   margin-top:60px;
+}
+
+.birthday-photo:hover{
+  transform:scale(1.05);
+}
+
+/* ================= MOBILE (<= 768px) ================= */
+@media (max-width: 768px){
+
+  .img{
+    width: 260px;
+    top: 10px;
+  }
+
+  .foto{
+    width: 90%;
+    min-width: auto;
+    margin-top: 60px;
+  }
+
+  .paper{
+    height: 100%;
+    margin: 30px auto;
+  }
+
+  .paper-content .teks{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .container{
+    top: 180px;
+    padding: 0 15px;
+  }
+
+  li{
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  li span{
+    font-size: 20px;
+  }
+
+  .kotak{
+    top: 200px;
+    width: 95%;
+  }
+
+  #slideLima,
+  #trims{
+    top: 200px;
+  }
+
+  #tap{
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  /* Photos */
+  .birthday-photo{
+    height: 200px;
+    margin-top: 30px;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE (<= 480px) ================= */
+@media (max-width: 480px){
+
+  .img{
+    width: 220px;
+  }
+
+  .paper{
+    height: 100%;
+  }
+
+  .paper-content .teks{
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .container{
+    top: 140px;
+  }
+
+  li{
+    font-size: 11px;
+  }
+
+  li span{
+    font-size: 18px;
+  }
+
+  .birthday-photo{
+    height: 170px;
+  }
+
+}
+
