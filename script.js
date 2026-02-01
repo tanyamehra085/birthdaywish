@@ -210,8 +210,8 @@ biryani kab ready hogi wo dekh lenge 😜
   speed: 75,
 
   afterComplete: async (instance) => {
-    const tap = document.getElementById("tap");
-    if (tap) tap.remove(); // ⭐ Tap permanently remove
+    // const tap = document.getElementById("tap");
+    // if (tap) tap.remove(); // ⭐ Tap permanently remove
 
     const slideDua = document.getElementById("slideDua");
 
