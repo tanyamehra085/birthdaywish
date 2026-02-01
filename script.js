@@ -62,18 +62,18 @@ const _slideDua = function () {
   }, 1000);
 
   slideDua.classList.remove("d-none");
-  setTimeout(function () {
-    tap.classList.remove("d-none");
-    document.body.addEventListener("click", function () {
-      slideDua.classList.replace("animate__zoomInDown", "animate__fadeOutLeft");
-      slideDua.classList.remove("animate__delay-2s", "animate__slow");
-      tap.classList.add("d-none");
-      setTimeout(function () {
-        slideDua.remove();
-        _slideTiga();
-      }, 1000);
-    });
-  }, 40000);
+  // setTimeout(function () {
+  //   tap.classList.remove("d-none");
+  //   document.body.addEventListener("click", function () {
+  //     slideDua.classList.replace("animate__zoomInDown", "animate__fadeOutLeft");
+  //     slideDua.classList.remove("animate__delay-2s", "animate__slow");
+  //     tap.classList.add("d-none");
+  //     setTimeout(function () {
+  //       slideDua.remove();
+  //       _slideTiga();
+  //     }, 1000);
+  //   });
+  // }, 40000);
 };
 
 const _slideTiga = function () {
